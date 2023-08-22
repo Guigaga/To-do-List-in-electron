@@ -1,0 +1,15 @@
+{
+  "name": "lumos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Guilherme Guerreiro",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.6.0"
+  }
+}

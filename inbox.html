@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lumos App</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Menu top /////////////////////////////////////////////////////////////////////////-->
+  <!-- <div class="menu-top">
+
+    <div class="menu-top-left-group">
+      <div class="icon-container">
+       <a href="inbox.html">
+        <img src="./img/inbox.png" alt="Menu" class="icon" id="menu-icon">
+       </a> 
+      </div>
+      <div class="icon-container">
+        
+        <a href="focus.html">
+          <img src="./img/Radio_Fill.png" alt="Focus" class="icon">
+        </a>
+      </div>
+     
+     <div class="SearchBar-container">
+        <img src="./img/Search_Magnifying_Glass.png" alt="Search">
+        <span class="Search-input-label">Search</span>
+      </div>
+    </div>
+
+      
+      
+
+
+    <div class="menu-top-right-group">
+        <div class="icon-container">
+          <img src="./img/Bell.png" alt="House" class="icon">
+        </div>
+      
+      <img src="./img/white.avif" alt="House" class="perfil-logo">
+    </div>
+  </div> 
+  
+  
+  /////////////////////////////////////////////////////////////////////////-->
+
+  <div class="body">
+    <div class="inbox-container">
+      <div class="body-text">
+        <div>
+          <span style="font-weight: 600; font-size: 20px; color: white; margin-right: 3px;">Today</span>
+          <span id="date-today-title" style="font-size: 12px; font-weight: 200 ; color: rgba(255, 255, 255, 0.50);"></span>
+        </div>
+        
+        
+      </div>
+      <div class="add-task-btn" id="addTaskBtn">
+        <div id="icon-add-tsk-btn-container" style="margin-right: 5px; height: 18px; width: 18px; border-radius: 100% ; display: flex; justify-content: center; align-items: center;">
+          <img src="./img/Add_Plus_blue.png" alt="Plus" class="icon-add-tsk-btn">
+        </div>
+        
+        <span style="color: rgba(255, 255, 255, 0.70); font-size: 14px;" id="add-task-btn-text">Add Task</span>
+      </div>
+      
+      <ul id="taskList"></ul>
+
+      <div id="taskModal" class="modal">
+        <div class="modal-content">
+          <input class="task-name" type="text" id="taskName" placeholder="Task Name" spellcheck="false">
+
+
+          <p style=" color: rgba(255, 255, 255, 0.50);
+          margin-top: 5px;
+          margin-bottom: 3px;">Duration</p>
+          <select id="duration" class="duration">
+            <option value="">Short Task / Reminder</option>
+            <option value="0:15">15 minutes</option>
+            <option value="0:30">30 minutes</option>
+            <option value="0:45">45 minutes</option>
+            <option value="1:00">1 hour</option>
+            <option value="2:00">2 hours</option>
+            <option value="3:00">3 hours</option>
+            <option value="4:00">4 hours</option>
+          </select>
+
+
+          <p style=" color: rgba(255, 255, 255, 0.50);
+          margin-top: 5px;
+          margin-bottom: 7px;">Priority</p>
+            <form id="priority">
+              <input type="radio" id="asap" value="ASAP" name="priority" class="radio-btn-priority" checked>
+              <label for="asap" class="label">
+                <span>ASAP</span>
+              </label>
+
+              <input type="radio" id="low-priority" value="Low" name="priority" class="radio-btn-priority">
+              <label for="low-priority" class="label">
+                <img src="./img/Union-2.png" alt="Plus" class="icon-priority">
+                <span>Low</span>
+              </label>
+
+              <input type="radio" id="medium-priority" value="Medium" name="priority" class="radio-btn-priority">
+              <label for="medium-priority" class="label">
+                <img src="./img/Union-1.png" alt="Plus" class="icon-priority">
+                <span>Medium</span>
+              </label>
+
+              <input type="radio" id="high-priority" value="High" name="priority" class="radio-btn-priority">
+              <label for="high-priority" class="label">
+                <img src="./img/Union.png" alt="Plus" class="icon-priority">
+                <span>High</span>
+              </label>
+            </form>
+
+
+
+
+          <p style=" color: rgba(255, 255, 255, 0.50);
+          margin-top: 12px;">Dedline</p>
+          <input type="radio" name="dateRadio" class="date-input" id="noDate" value="No" checked>
+              <label class="date-label" for="noDate" style="padding: 5px 10px; width: 89px; font-size: 12px; padding-top: 3px;">No Deadline</label>
+          
+          
+              <div id="buttonContainer1" class="buttonContainerDeadline1" style=" margin-top: 5px; margin-bottom: 3px;">
+
+            <div class="button-row"></div>            
+          </div>
+          <div id="buttonContainer2" class="buttonContainerDeadline2" style=" margin-top: 3px; margin-bottom: 13px;">
+
+          </div>
+
+
+
+          <div class="modal-btns">
+            <div class="close" id="cancelModalBtn">Cancel</div>
+            <div id="saveTaskBtn" class="saveTaskBtn">Save</div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+
+
+
+      
+    
+  </div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
